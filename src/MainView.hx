@@ -21,6 +21,7 @@ class MainView extends VBox {
         damagesContent.text = cardList.selectedItem.damages;
         damagesCard.hidden = false;
     }
+    
     // Sélection d'un item à la souris
     @:bind(cardList, MouseEvent.CLICK)
     private  function onCardListClick(e:MouseEvent) {
