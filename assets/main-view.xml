@@ -1,0 +1,24 @@
+<vbox style="padding: 5px;">
+    <style>
+        .button {
+            font-size: 20px;
+        }
+    </style>
+    <hbox>
+        <vbox>
+            <listview id="cardList" width="200" height="150">
+                <item-renderer layoutName="horizontal" width="100%">
+                    <label width="100%" id="title" verticalAlign="center" />
+                </item-renderer>
+            </listview>
+            <button text="Random pick" id="randomPick" width="100%" />
+            <button text="+" id="addCard" width="100%" />
+
+        </vbox>    
+        <card id="damagesCard" width="288" height="150" text="Some Other Card" hidden="true">
+            <box width="100%" height="100%">
+                <label id="damagesContent" text="content" verticalAlign="center" horizontalAlign="center" styleName="card-title-label" />
+            </box>    
+        </card>   
+    </hbox>
+</vbox>

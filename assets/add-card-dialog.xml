@@ -1,0 +1,9 @@
+<dialog width="400" title="Login">
+    <grid width="100%">
+        <label text="Title" verticalAlign="center" />
+        <textfield id="cardTitle" width="100%" />
+        
+        <label text="Damages" verticalAlign="center" />
+        <textarea id="cardDamages" width="100%" />
+    </grid>
+</dialog>
