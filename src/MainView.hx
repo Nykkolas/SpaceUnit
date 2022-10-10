@@ -6,6 +6,8 @@ import haxe.ui.events.MouseEvent;
 import haxe.ui.containers.dialogs.Dialog;
 import Random;
 
+using haxe.ui.animation.AnimationTools;
+
 @:build(haxe.ui.ComponentBuilder.build("assets/main-view.xml"))
 class MainView extends VBox {
     public function new() {
@@ -20,6 +22,7 @@ class MainView extends VBox {
         damagesCard.text = cardList.selectedItem.title;
         damagesContent.text = cardList.selectedItem.damages;
         damagesCard.hidden = false;
+        damagesCard.flash(0x948df4);
     }
     
     // Sélection d'un item à la souris
